@@ -1,0 +1,6 @@
+TouchScreen
+===========
+Provides a simple interface to 4-wire resistive touchscreens such as
+the Nintendo DS touchscreen.
+
+Copyright 2009 Jonathan Oxer <jon@oxer.com.au> / <www.practicalarduino.com>
