@@ -51,11 +51,7 @@ void TouchScreen::Read(int *coordinates)
   digitalWrite( _x1 + 14, HIGH ); // Use analog pin 3 as a +5V connection
   _yVal = analogRead( _y1 );      // Read the Y value
 
-  // Report back
-  //Serial.print(_xVal);
-  //Serial.print(",");
-  //Serial.println(_yVal);
-
+  // Update the array we were pointed to by the calling function
   coordinates[0] = _xVal;
   coordinates[1] = _yVal;
 }
