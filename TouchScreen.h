@@ -15,7 +15,7 @@ class TouchScreen
 {
   public:
     TouchScreen(int x1, int x2, int y1, int y2);
-    void Read(int *coordinates);  // Read the touchscreen and return coordinates
+    void read(int *coordinates);  // Read the touchscreen and return coordinates
   private:
     int _x1;      // Analog pin connected to screen line X1
     int _x2;      // Analog pin connected to screen line X2

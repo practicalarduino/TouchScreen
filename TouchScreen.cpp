@@ -31,7 +31,7 @@ TouchScreen::TouchScreen(int x1, int x2, int y1, int y2)
 /**
  * Reads the X and Y coordinates from a touchscreen
  */
-void TouchScreen::Read(int *coordinates)
+void TouchScreen::read(int *coordinates)
 {
   // Read the X coordinate
   pinMode( _x2 + 14, INPUT );     // Analog pin 1
