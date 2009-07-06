@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
   int coords[2];
-  ts.Read(coords);
+  ts.read(coords);
   Serial.print(coords[0]);
   Serial.print(",");
   Serial.println(coords[1]);
