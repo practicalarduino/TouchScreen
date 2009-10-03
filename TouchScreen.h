@@ -9,18 +9,20 @@
 #ifndef TouchScreen_h
 #define TouchScreen_h
 
+#define DIGITAL_OFFSET 14  // Added to analog pin number to get digital number
+
 #include "WProgram.h"
 
 class TouchScreen
 {
   public:
-    TouchScreen(int x1, int x2, int y1, int y2);
+    TouchScreen(int pinX1, int pinX2, int pinY1, int pinY2);
     void read(int *coordinates);  // Read the touchscreen and return coordinates
   private:
-    int _x1;      // Analog pin connected to screen line X1
-    int _x2;      // Analog pin connected to screen line X2
-    int _y1;      // Analog pin connected to screen line Y1
-    int _y2;      // Analog pin connected to screen line Y2
+    int _pinX1;   // Analog pin connected to screen line X1
+    int _pinX2;   // Analog pin connected to screen line X2
+    int _pinY1;   // Analog pin connected to screen line Y1
+    int _pinY2;   // Analog pin connected to screen line Y2
     int _xVal;    // Current X coordinate
     int _yVal;    // Current Y coordinate
 };
